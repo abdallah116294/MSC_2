@@ -1,3 +1,18 @@
 {
-    "language":"العربية" 
+    "language":"العربية" ,
+    "next":"Next",
+    "start":"Start",
+    "quick_and_easy":"Quick and Easy Health Insurance",
+    "subscribe_":"Subscribe to your personal or family health insurance easily through the app, and choose the plan that suits your medical needs in simple steps.",
+    "nearby":"Nearby Medical Centers at Your Reach",
+    "discover":"Discover nearby hospitals, pharmacies, laboratories, optical centers, and radiology centers, and benefit from discounts of up to 50% through our medical network.",
+    "track":"Track Your Insurance",
+    "montior":"Monitor the status of your health insurance subscription and check the expiration date directly through the app. Scan the barcode at our medical centers for instant discounts with ease.",
+    "sign_in_welcome":"Welcome! We are happy to serve you and provide the best health insurance solutions for you and your family.",
+    "sign_in_to_enjoy":"Log in to enjoy the best health insurance services.",
+    "phone_number": "Phone Number",
+    "enter_phone_number": "Enter Phone Number",
+    "sign_in": "Sign In",
+    "dont_have_insurance": "Don't have insurance?",
+    "join_now": "Join Now"
 }
