@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:msc_2/config/routes/app_routes.dart';
 import 'package:msc_2/core/cache/cache_helper.dart';
 import 'package:msc_2/core/extensions/context_extensions.dart';
 import 'package:msc_2/core/localization/lang_keys.dart';
@@ -30,6 +31,7 @@ class ElevatedOnboardingButton extends StatelessWidget {
               log('Is Last Page $isLastPage');
               if (isLastPage) {
                 CacheHelper.saveIfNotFirstTime();
+                context.pushReplacementNamed(AppRoutes.signInRoute);
                 log('is Last page');
               } else {
                 log('not Last Page ');

@@ -25,13 +25,12 @@ class _SplashScreenState extends State<SplashScreen> {
   _gotNext() async {
     bool isFirstTime = CacheHelper.getIfFirstTime();
     Future.delayed(const Duration(seconds: 5), () {
-      if(isFirstTime){
-       context.pushReplacementNamed(AppRoutes.onBoardingRoute);
-      }else{
-        //!Sign In view 
-        
+      if (isFirstTime) {
+        context.pushReplacementNamed(AppRoutes.onBoardingRoute);
+      } else {
+        //!Sign In view
+        context.pushName(AppRoutes.signInRoute);
       }
-     
     });
   }
 
