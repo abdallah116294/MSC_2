@@ -14,5 +14,23 @@
     "enter_phone_number":"أدخل رقم الهاتف",
     "sign_in":"تسجيل الدخول",
     "dont_have_insurance":"ليس لديك تأمين ؟",
-    "join_now":"إشتراك الآن"
+    "join_now":"إشتراك الآن",
+    "individual_insurance":"تأمين الأفراد",
+    "invented_type_of_insurance":"اخترع نوع التأمين ",
+    "instruction":"بعد الاشتراك، سيتم التواصل معك فوراً من خدمة العملاء، وتوصيل بطاقة الخصومات لمنزلك خلال 24 ساعة.",
+    "family_insurance":"تأمين الأسر",
+    "name":"الاسم(عربي)",
+    "enter_full_name":"أدخل الاسم بالكامل",
+    "birth_data":"تاريخ الميلاد",
+    "please_enter_your_name":"الرجاء إدخال الاسم",
+    "subscription":"اشتراك",
+    "data_of_birth":"تاريخ الميلاد",
+    "enter_birth_date":"أدخل تاريخ الميلاد",
+    "Upload_a_photo_of_your_personal_ID":"قم برفع صورة الهوية الشخصية",
+    "subscription_for_10_dinars":"إشتراك مقابل 10 دينار",
+    "add_husband_or_wife":"إضافة زوج أو زوجة",
+    "add_son_or_daughter":"إضافة ابن أو ابنة",
+    "abolition_wife":"إلغاء الزوج أو الزوجة",
+    "age_of_husband_or_wife":"عمر الزوج أو الزوجة"
+
 }

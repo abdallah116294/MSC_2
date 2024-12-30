@@ -14,5 +14,22 @@
     "enter_phone_number": "Enter Phone Number",
     "sign_in": "Sign In",
     "dont_have_insurance": "Don't have insurance?",
-    "join_now": "Join Now"
+    "join_now": "Join Now",
+    "individual_insurance":"Individual insurance",
+    "invented_type_of_insurance":"Invented type of insurance",
+    "instruction":"After subscribing, you will be contacted immediately by customer service, and the discount card will be delivered to your home within 24 hours.",
+     "family_insurance":"family insurance",
+     "name":"name(English)",
+     "enter_full_name":"Enter full name",
+     "birth_data":"Birth Date",
+    "please_enter_your_name":"Please enter your name",
+    "subscription":"Subscription",
+     "data_of_birth":"Date of Birth",
+     "enter_birth_date":"Enter birth date",
+     "Upload_a_photo_of_your_personal_ID":" Upload a photo of your personal ID",
+     "subscription_for_10_dinars":"Subscription for 10 dinars",
+     "add_husband_or_wife":"Add a husband or wife",
+     "add_son_or_daughter":"Add a son or daughter",
+      "abolition_wife":"Abolition of husband or wife",
+      "age_of_husband_or_wife":"The age of the husband or wife"
 }

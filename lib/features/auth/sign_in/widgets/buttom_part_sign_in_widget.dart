@@ -1,13 +1,11 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
+import 'package:msc_2/config/routes/app_routes.dart';
 import 'package:msc_2/core/extensions/context_extensions.dart';
 import 'package:msc_2/core/localization/lang_keys.dart';
-import 'package:msc_2/core/localization/lang_keys.dart';
 import 'package:msc_2/core/utils/app_color.dart';
-import 'package:msc_2/core/widgets/custom_text.dart';
+import 'package:msc_2/features/auth/sign_in/cubit/sign_in_cubit.dart';
 import 'package:msc_2/features/auth/sign_in/widgets/line_widget.dart';
 import 'package:msc_2/features/auth/sign_in/widgets/sign_in_elevated_button_widget.dart';
 import 'package:msc_2/features/auth/sign_in/widgets/subscribe_button_widget.dart';
@@ -17,10 +15,13 @@ class BottomContainer extends StatelessWidget {
   BottomContainer(
       {super.key,
       required this.signInButton,
-      required this.phoneNumberController});
+      required this.cubit,
+      required this.phoneNumberController,
+      required this.formKey});
   final TextEditingController phoneNumberController;
   final VoidCallback signInButton;
-  final _formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formKey;
+  final SignInCubit cubit;
   @override
   Widget build(BuildContext context) {
     final remainingHeight = MediaQuery.of(context).size.height - 400;
@@ -42,7 +43,7 @@ class BottomContainer extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 2),
           child: SingleChildScrollView(
             child: Form(
-              key: _formKey,
+              key: formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -88,14 +89,17 @@ class BottomContainer extends StatelessWidget {
                   ),
                   SizedBox(height: 12.h),
                   SignInElevatedButtonWidget(onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      log("button");
+                    if (formKey.currentState!.validate()) {
+                      cubit.signIN(phoneNumber: phoneNumberController.text);
+                      // log("button");
                     }
                   }),
                   SizedBox(height: 12.h),
                   const LineWidget(),
                   SizedBox(height: 12.h),
-                 SubscribeButtonWidget(onPressed: (){})
+                  SubscribeButtonWidget(onPressed: () {
+                    context.pushName(AppRoutes.subscriptionRoute);
+                  })
                 ],
               ),
             ),
