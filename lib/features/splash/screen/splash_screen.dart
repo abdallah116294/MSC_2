@@ -28,8 +28,10 @@ class _SplashScreenState extends State<SplashScreen> {
       if (isFirstTime) {
         context.pushReplacementNamed(AppRoutes.onBoardingRoute);
       } else {
+       //Navbar view
+        context.pushName(AppRoutes.navBar);
         //!Sign In view
-        context.pushName(AppRoutes.signInRoute);
+        //context.pushName(AppRoutes.signInRoute);
       }
     });
   }

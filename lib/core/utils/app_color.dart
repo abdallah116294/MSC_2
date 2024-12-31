@@ -24,7 +24,16 @@ class AppColor {
   static Color woderdMarkColor = const Color.fromRGBO(249, 250, 251, 1);
   static Color hintText = const Color.fromRGBO(124, 124, 124, 1);
   static Color uploadImageTextColor = Color.fromRGBO(116, 95, 116, 1);
-  static Color spinBoxColor=Color.fromRGBO(217, 241, 253, 1);
+  static Color spinBoxColor = Color.fromRGBO(217, 241, 253, 1);
+  static Color floatingButtonColor = Color.fromRGBO(38, 94, 116, 1);
+  static Color substractColor1 = Color.fromRGBO(43, 190, 155, 1);
+  static Color substractColor2 = Color.fromRGBO(40, 123, 103, 1);
+  static Color notifcationColor = Color.fromRGBO(41, 92, 61, 1);
+  static Color discoverButtonColor = Color.fromRGBO(2, 122, 72, 1);
+  //rgba(2, 122, 72, 1)
+  //rgba(40, 123, 103, 1)
+  //rgba(43, 190, 155, 1)
+  //rgba(38, 94, 116, 1)
   //rgb(217, 241, 253)
 //rgba(249, 250, 251, 1)
 //rgba(116, 95, 116, 1)

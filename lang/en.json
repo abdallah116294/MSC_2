@@ -31,5 +31,9 @@
      "add_husband_or_wife":"Add a husband or wife",
      "add_son_or_daughter":"Add a son or daughter",
       "abolition_wife":"Abolition of husband or wife",
-      "age_of_husband_or_wife":"The age of the husband or wife"
+      "age_of_husband_or_wife":"The age of the husband or wife",
+      "home":"home",
+      "search":"Search",
+      "subscription_renewal":"Subscription Renewal",
+      "profile":"Profile"
 }

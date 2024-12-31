@@ -5,6 +5,7 @@ import 'package:msc_2/core/networking/dio_manager.dart';
 import 'package:msc_2/features/auth/data/repo/auth_repo.dart';
 import 'package:msc_2/features/auth/data/repo/auth_repo_impl.dart';
 import 'package:msc_2/features/auth/sign_in/cubit/sign_in_cubit.dart';
+import 'package:msc_2/features/nav_bar/cubit/nav_bar_cubit.dart';
 import 'package:msc_2/features/on_boarding/cubit/on_boarding_cubit.dart';
 import 'package:msc_2/features/subscription/cubit/check_box_cubit.dart';
 import 'package:msc_2/features/subscription/cubit/subscription_cubit.dart';
@@ -21,6 +22,8 @@ Future<void> init() async {
   //! Auth
   sl.registerLazySingleton<AuthRepo>(() => AuthRepoImpl(apiConsumer: sl()));
   sl.registerFactory(() => SignInCubit(authRepo: sl()));
+  //!NavBar
+  sl.registerFactory(()=>NavBarCubit());
   //=>Networking
   sl.registerLazySingleton<ApiConsumer>(() => DioManager(dio: sl()));
   sl.registerLazySingleton<DioManager>(() => DioManager(dio: sl()));

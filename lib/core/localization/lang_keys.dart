@@ -33,4 +33,8 @@ class LangKeys {
   static const String add_son_or_daughter = "add_son_or_daughter";
   static const String abolition_wife = "abolition_wife";
   static const String age_of_husband_or_wife = "age_of_husband_or_wife";
+  static  const String home="home";
+  static const String search="search";
+  static const String profile="profile";
+  static const String subscription_renewal="subscription_renewal";
 }
