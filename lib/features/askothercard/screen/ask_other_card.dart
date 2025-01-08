@@ -4,7 +4,7 @@ import 'package:msc_2/core/utils/app_color.dart';
 import 'package:msc_2/core/widgets/custom_elevated.dart';
 import 'package:msc_2/core/widgets/custom_text.dart';
 import 'package:msc_2/core/widgets/cutom_app_bar.dart';
-import 'package:msc_2/features/subscription/widgets/custom_text_form_field.dart';
+import 'package:msc_2/features/subscription/peresentation/widgets/custom_text_form_field.dart';
 
 class AskOtherCard extends StatelessWidget {
   const AskOtherCard({super.key});

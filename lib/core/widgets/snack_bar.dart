@@ -13,7 +13,7 @@ showMessage({
   ScaffoldMessenger.of(AppRoutes.currentContext).showSnackBar(
     SnackBar(
       behavior: SnackBarBehavior.floating,
-      backgroundColor: AppColor.grey,
+      backgroundColor: AppColor.primary,
       elevation: 2.0,
       content: Row(
         children: [
